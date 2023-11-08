@@ -10,7 +10,7 @@ class Hamburger {
     }
   
     calculatePrice() {
-      let totalPrice = this.size.price + this.stuffing.price;
+      const totalPrice = this.size.price + this.stuffing.price;
       for (let topping of this.toppings) {
         totalPrice += topping.price;
       }
@@ -18,7 +18,7 @@ class Hamburger {
     }
   
     calculateCalories() {
-      let totalCalories = this.size.calories + this.stuffing.calories;
+      const totalCalories = this.size.calories + this.stuffing.calories;
       for (let topping of this.toppings) {
         totalCalories += topping.calories;
       }
@@ -26,14 +26,14 @@ class Hamburger {
     }
   }
   
-  let SIZE_SMALL = { price: 50, calories: 20 };
-  let SIZE_LARGE = { price: 100, calories: 40 };
-  let STUFFING_CHEESE = { price: 10, calories: 20 };
-  let STUFFING_SALAD = { price: 20, calories: 5 };
-  let STUFFING_POTATO = { price: 15, calories: 10 };
+  const SIZE_SMALL = { price: 50, calories: 20 };
+  const SIZE_LARGE = { price: 100, calories: 40 };
+  const STUFFING_CHEESE = { price: 10, calories: 20 };
+  const STUFFING_SALAD = { price: 20, calories: 5 };
+  const STUFFING_POTATO = { price: 15, calories: 10 };
   
-  let TOPPING_MAYO = { price: 20, calories: 5 };
-  let TOPPING_SAUCE = { price: 15, calories: 0 };
+  const TOPPING_MAYO = { price: 20, calories: 5 };
+  const TOPPING_SAUCE = { price: 15, calories: 0 };
  
   let hamburger = new Hamburger(SIZE_SMALL, STUFFING_CHEESE);
  
